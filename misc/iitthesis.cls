@@ -631,7 +631,7 @@
    \label{chap:notation-and-abbreviations}
    \addcontentsline{toc}{chapter}{Notation and Abbreviations}
    \addcontentsline{cot}{chapter}{רשימת סמלים וקיצורים}
-   \printglossary[title=,style=iitthesis]
+   \printglossary[title=]
   }
 }{}
 
