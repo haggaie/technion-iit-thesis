@@ -128,10 +128,13 @@
 \RequirePackage{setspace}
 \RequirePackage{atbegshi}
 \ifbool{iitthesis-abbrevs}{
-  \RequirePackage[automake,indexonlyfirst]{glossaries-extra}
+  \RequirePackage[automake]{glossaries-extra}
   \RequirePackage{longtable}
   \makeglossaries
   \setabbreviationstyle[acronym]{long-short}
+  % Do not include abbreviations in the glossary index by default. To include,
+  % use the \gls[noindex=false] command.
+  \GlsXtrSetDefaultGlsOpts{noindex}
 }{}
 
 \iitthesis@geometry
